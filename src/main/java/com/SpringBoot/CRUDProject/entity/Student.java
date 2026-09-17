@@ -3,6 +3,8 @@ package com.SpringBoot.CRUDProject.entity;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 
+
+
 @Entity
 public class Student {
 

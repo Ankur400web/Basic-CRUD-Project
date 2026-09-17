@@ -8,15 +8,14 @@ import org.springframework.stereotype.Component;
 @Component
 public class StudentService {
 
-    private StudentRepository studentRepository;
+    private final StudentRepository studentRepository;
 
     public StudentService(StudentRepository studentRepository){
         this.studentRepository = studentRepository;
     }
 
     public Student createStudent(Student studentReq){
-        Student student = studentRepository.save(studentReq);
-        return student;
+        return studentRepository.save(studentReq);
 
     }
 }
